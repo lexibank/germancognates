@@ -1,8 +1,7 @@
 {
     "id": "germancognates",
-    "title": "CLDF dataset providing Cognates from German, Dutch, and English",
+    "title": "CLDF dataset accompanying Nieder and List's \"Assessment of Mutual Intelligibilit\" from 2024",
     "license": "CC-BY-4.0",
-    "url": "",
-    "citation": "",
-    "conceptlist": ""
+    "url": "https://github.com/lexibank/germancognates",
+    "citation": "Nieder, J. and List, J.-M. (2024): A Computational Model for the Assessment of Mutual Intelligibility Among Closely Related Languages. In: Proceedings of the 6th Workshop on Research in Computational Linguistic Typology and Multilingual NLP (SIGTYP 2024), pages 52–64"
 }

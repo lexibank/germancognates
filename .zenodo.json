@@ -1,11 +1,15 @@
 {
-    "title": "CLDF dataset providing Cognates from German, Dutch, and English",
+    "title": "CLDF dataset accompanying Nieder and List's \"Assessment of Mutual Intelligibilit\" from 2024",
     "access_right": "open",
     "keywords": [
         "cldf:Wordlist",
         "linguistics"
     ],
-    "creators": [],
+    "creators": [
+        {
+            "name": "Johann-Mattis List"
+        }
+    ],
     "contributors": [],
     "communities": [
         {
@@ -15,5 +19,6 @@
     "upload_type": "dataset",
     "license": {
         "id": "CC-BY-4.0"
-    }
+    },
+    "description": "<p>Cite the source of the dataset as:</p>\n\n<blockquote>\n<p>Nieder, J. and List, J.-M. (2024): A Computational Model for the Assessment of Mutual Intelligibility Among Closely Related Languages. In: Proceedings of the 6th Workshop on Research in Computational Linguistic Typology and Multilingual NLP (SIGTYP 2024), pages 52\u201364</p>\n</blockquote>"
 }

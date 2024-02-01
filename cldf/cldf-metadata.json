@@ -1,13 +1,22 @@
 {
     "@context": "http://www.w3.org/ns/csvw",
     "aboutUrl": null,
+    "dc:bibliographicCitation": "Nieder, J. and List, J.-M. (2024): A Computational Model for the Assessment of Mutual Intelligibility Among Closely Related Languages. In: Proceedings of the 6th Workshop on Research in Computational Linguistic Typology and Multilingual NLP (SIGTYP 2024), pages 52\u201364",
     "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#Wordlist",
+    "dc:identifier": "https://github.com/lexibank/germancognates",
     "dc:isVersionOf": null,
     "dc:license": "https://creativecommons.org/licenses/by/4.0/",
     "dc:related": null,
     "dc:source": "sources.bib",
-    "dc:title": "CLDF dataset providing Cognates from German, Dutch, and English",
+    "dc:title": "CLDF dataset accompanying Nieder and List's \"Assessment of Mutual Intelligibilit\" from 2024",
+    "dcat:accessURL": "git@github.com:lexibank/germancognates",
     "prov:wasDerivedFrom": [
+        {
+            "rdf:about": "git@github.com:lexibank/germancognates",
+            "rdf:type": "prov:Entity",
+            "dc:created": "e702e63",
+            "dc:title": "Repository"
+        },
         {
             "rdf:about": "https://github.com/glottolog/glottolog",
             "rdf:type": "prov:Entity",

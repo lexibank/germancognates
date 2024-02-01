@@ -6,6 +6,7 @@ from pylexibank import progressbar as pb
 from pylexibank import Lexeme
 from pylexibank import FormSpec
 from pyedictor import fetch
+from pyclts import CLTS
 from lingpy import Wordlist
 
 @attr.s
@@ -48,6 +49,16 @@ class Dataset(BaseDataset):
         # add language
         languages = args.writer.add_languages(lookup_factory="Name")
         args.log.info("added languages")
+        
+        bipa = CLTS(args.clts.dir).bipa
+        def toclts(segments):
+            out = []
+            for segment in segments:
+                if segment not in "-()+":
+                    out += [bipa[segment].s]
+                else:
+                    out += [segment]
+            return out
 
         # add data
         for idx in pb(wl, desc="cldfify", total=len(wl)):
@@ -56,7 +67,8 @@ class Dataset(BaseDataset):
                     Language_ID=languages[wl[idx, "language"]],
                     Value=wl[idx, "counterpart"],
                     Form=wl[idx, "ipa"],
-                    Segments=wl[idx, "tokens"],
+                    Segments=toclts(wl[idx, "tokens"]),
                     Cognacy=wl[idx, "cogid"],
-                    Alignment=wl[idx, "alignment"])
+                    Alignment=toclts(wl[idx, "alignment"]),
+                    Source="Kluge2002")
 
